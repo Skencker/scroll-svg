@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="line-container">
+ 
+      <svg
+        viewBox="0 0 715 1816"
+        fill="none"
+        preserveAspectRatio="xMidYMax meet"
+      >
+
+        <path id="path" d="M335.741 5.34628C335.741 62.3361 335.741 119.326 335.741 176.316C335.741 206.943 338.118 236.943 339.494 267.222C340.972 299.74 354.506 329.139 354.506 361.672C354.506 374.169 355.199 386.928 354.506 399.41C353.593 415.84 330.311 420.124 318.644 424.013C281.032 436.551 248.999 444.446 209.807 444.446C173.066 444.446 116.539 447.784 102.222 404.831C99.4816 396.611 92.4566 388.996 88.8777 380.645C82.5402 365.858 84.2907 348.314 84.2907 332.69C84.2907 326.418 81.5637 314.268 88.8777 311.423C106.286 304.653 131.761 309.339 150.176 309.339C167.065 309.339 178.446 317.492 188.54 331.022C202.52 349.761 221.038 369.144 230.657 390.445C240.748 412.789 241.137 437.437 244.21 461.335C249.417 501.837 253.175 540.449 253.175 581.222C253.175 623.197 253.434 665.181 253.175 707.155C252.858 758.552 239.749 801.941 228.989 851.437C213.438 922.973 185.772 1000.35 138.918 1058.27C117.872 1084.28 88.5329 1100.82 61.7727 1119.98C50.982 1127.71 37.9423 1137.23 24.2428 1138.75C20.1334 1139.21 15.79 1146.94 13.8179 1138.33C8.24592 1114.02 5.47787 1088.6 5.47787 1063.69C5.47787 1056.23 4.63653 1011.82 16.7368 1011.15C42.1144 1009.74 75.7305 1006.27 99.3026 1015.11C114.22 1020.7 128.988 1022.48 140.586 1034.08C153.359 1046.86 171.122 1063.9 180.2 1079.54C205.388 1122.91 210.857 1176.33 232.325 1221.32C242.607 1242.86 245.466 1266.35 257.345 1287.41C273.365 1315.81 287.297 1344.6 309.47 1368.93C360.573 1425 451.413 1444.71 523.808 1446.29C561.661 1447.11 599.577 1446.49 637.44 1446.49C659.776 1446.49 670.325 1434.64 682.476 1416.68C695.214 1397.85 723.59 1340.13 703.534 1318.89C684.115 1298.33 624.755 1327.95 604.914 1333.9C548.699 1350.77 494.555 1353.35 455.837 1403.13C441.232 1421.9 423.641 1441.96 412.886 1463.17C400.372 1487.86 402.558 1511.05 395.789 1536.77C384.543 1579.51 392.036 1630.41 392.036 1674.59C392.036 1724.1 419.756 1757.84 465.636 1774.88C492.441 1784.84 520.643 1789.08 547.785 1797.61C561.941 1802.06 575.814 1810.53 590.944 1810.53" stroke="#06F9CD" stroke-width="9" stroke-linecap="round"/>
+
+        
+      </svg>
+    </div>
+
+    <section class="one">
+      <h1 class="scroll" data-rate=".4" data-direction="vertical">
+        Le Patio Numérique
+      </h1>
+    </section>
+    <section class="two">
+      <h1 class="scroll" data-rate=".2" data-direction="vertical">
+        omg scroll
+      </h1>
+      <p>big watermark</p>
+    </section>
+
+    <script>
+      // Get the id of the <path> element and the length of <path>
+      var path = document.getElementById("path");
+      var length = path.getTotalLength();
+
+      // The start position of the drawing
+      path.style.strokeDasharray = length;
+
+      // Hide the draw by offsetting dash. Remove this line to show the triangle before scroll draw
+      path.style.strokeDashoffset = length;
+
+      // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+      window.addEventListener("scroll", myFunction);
+
+      function myFunction() {
+        var scrollpercent =
+          (document.body.scrollTop + document.documentElement.scrollTop) /
+          (document.documentElement.scrollHeight -
+            document.documentElement.clientHeight);
+
+        var draw = length * scrollpercent;
+
+        // Reverse the drawing (when scrolling upwards)
+        path.style.strokeDashoffset = length - draw;
+      }
+    </script>
+  </body>
+</html>
