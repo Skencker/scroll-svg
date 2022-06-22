@@ -86,19 +86,63 @@ section {
 .icone-move path:nth-child(1) {
     stroke-dasharray: 1000px;
     stroke-dashoffset: 1000px;
-    animation: anim 7s ease forwards;
+    animation: anim 7s ease  forwards;
 }
 .icone-logo path:nth-child(1) {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    /* fill: black; */
+    animation: anim 7s ease forwards, fill 4.5s linear forwards ;;
+}
+.icone-logo path:nth-child(2) {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    /* fill: black; */
+    animation: anim 7s ease forwards;
+}
+.icone-logo path:nth-child(3) {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    /* fill: black; */
+    animation: anim 7s ease forwards;
+}
+.icone-logo path:nth-child(4) {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    /* fill: black; */
+    animation: anim 7s ease forwards;
+}
+.icone-logo path:nth-child(5) {
     stroke-dasharray: 1000px;
     stroke-dashoffset: 1000px;
     /* fill: black; */
     animation: anim 7s ease forwards;
 }
 
+.icone-logo path:nth-child(6) {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    /* fill: black; */
+    animation: anim 7s ease forwards;
+}
 @keyframes anim {
     to {
         fill: white;
         stroke-dashoffset: 0;
+    }
+    
+}
+@keyframes fill {
+    0% {
+
+        fill: transparent;
+    }
+    80% {
+
+        fill: transparent;
+    }
+    100% {
+        fill: black;
     }
     
 }
