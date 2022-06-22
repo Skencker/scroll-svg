@@ -41,21 +41,27 @@ section {
     display: flex;
 }
 
-.two h1 {
+.two h5 {
     margin-top: 300px;
+}
+
+.svg-circle {
+    position: absolute;
+    
+    left: 75%;
 }
 
 /* mot animé  */
 .icone-move {
     position: absolute;
     top: 80%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%,-50%);
 }
 .icone-logo {
     position: absolute;
     top: 20%;
-    left: 70%;
+    left: 69.5%;
     transform: translate(-50%,-50%);
 }
 
@@ -65,7 +71,7 @@ section {
     left: 67.5%;
     width: 375px;
     height: 330px;
-    background-color: chartreuse;
+    background-color: rgb(22, 249, 166);
 }
 .carre-bg {
     position: absolute;
@@ -167,6 +173,15 @@ section {
         stroke-dashoffset: 0;
     }
 }
+
+.img-coffee {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 30%;
+
+}
+
 
 
 
