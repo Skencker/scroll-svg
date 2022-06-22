@@ -58,6 +58,31 @@ section {
     left: 70%;
     transform: translate(-50%,-50%);
 }
+
+.carre-bord {
+    position: absolute;
+    top: 2%;
+    left: 67.5%;
+    width: 375px;
+    height: 330px;
+    background-color: chartreuse;
+}
+.carre-bg {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 320px;
+    height: 275px;
+    background-color: white;
+}
+.carre-bg-bord {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width:400px;
+    height: 200px;
+    background-color: white;
+}
 .icone-move path:nth-child(1) {
     stroke-dasharray: 1000px;
     stroke-dashoffset: 1000px;
@@ -66,13 +91,16 @@ section {
 .icone-logo path:nth-child(1) {
     stroke-dasharray: 1000px;
     stroke-dashoffset: 1000px;
+    /* fill: black; */
     animation: anim 7s ease forwards;
 }
 
 @keyframes anim {
     to {
+        fill: white;
         stroke-dashoffset: 0;
     }
+    
 }
 
 /* animation circle  */
@@ -95,6 +123,8 @@ section {
         stroke-dashoffset: 0;
     }
 }
+
+
 
 
 
