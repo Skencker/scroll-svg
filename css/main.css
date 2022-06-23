@@ -60,8 +60,8 @@ section {
 }
 .icone-logo {
     position: absolute;
-    top: 20%;
-    left: 69.5%;
+    top: 50%;
+    left: 10%;
     transform: translate(-50%,-50%);
 }
 
@@ -85,7 +85,7 @@ section {
     position: absolute;
     top: 20%;
     left: 0%;
-    width:400px;
+    width: 375px;
     height: 200px;
     background-color: white;
 }
@@ -181,6 +181,9 @@ section {
     width: 30%;
 
 }
+/* .wrapper {
+    position: relative;
+} */
 
 
 
