@@ -190,6 +190,29 @@ section {
 
 
 
+.clip-path-anim {
+    width: 500px;
+    height: 500px;
+    background: url('/web1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+   /* animation: 3.5s clip-anim infinite; */
+}
+
+@keyframes clip-anim {
+   0% {
+       clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+   } 
+   50% {
+       clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
+   100% {
+   clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+   }
+}
 
 
 
