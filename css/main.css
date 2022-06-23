@@ -47,7 +47,6 @@ section {
 
 .svg-circle {
     position: absolute;
-    
     left: 75%;
 }
 
@@ -165,11 +164,22 @@ section {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
     /* transition: stroke-dashoffset 0.4s ease-in-out; */
-    animation: anim 7s ease forwards;
+
+    animation: anim 4s ease forwards;
+    animation: anim2 4s ease forwards;
 }
 
 @keyframes anim {
     to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes anim2 {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-50px, -150px);
         stroke-dashoffset: 0;
     }
 }
@@ -178,7 +188,7 @@ section {
     position: absolute;
     top: 75%;
     left: 50%;
-    margin-left: 2.5rem;
+    margin-left: 5rem;
 
 }
 .clip-path-anim {
