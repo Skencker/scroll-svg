@@ -28,7 +28,7 @@
 
 //animation du cercle au scroll
 const el = document.querySelector('.filled')
-const ratio = .1
+const ratio = .2
 const options = {
   root: null,
   rootMargin: '0px',

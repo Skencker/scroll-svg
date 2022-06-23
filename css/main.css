@@ -99,37 +99,6 @@ section {
     /* fill: black; */
     animation: anim 7s ease forwards, fill 4.5s linear forwards ;;
 }
-.icone-logo path:nth-child(2) {
-    stroke-dasharray: 1000px;
-    stroke-dashoffset: 1000px;
-    /* fill: black; */
-    animation: anim 7s ease forwards;
-}
-.icone-logo path:nth-child(3) {
-    stroke-dasharray: 1000px;
-    stroke-dashoffset: 1000px;
-    /* fill: black; */
-    animation: anim 7s ease forwards;
-}
-.icone-logo path:nth-child(4) {
-    stroke-dasharray: 1000px;
-    stroke-dashoffset: 1000px;
-    /* fill: black; */
-    animation: anim 7s ease forwards;
-}
-.icone-logo path:nth-child(5) {
-    stroke-dasharray: 1000px;
-    stroke-dashoffset: 1000px;
-    /* fill: black; */
-    animation: anim 7s ease forwards;
-}
-
-.icone-logo path:nth-child(6) {
-    stroke-dasharray: 1000px;
-    stroke-dashoffset: 1000px;
-    /* fill: black; */
-    animation: anim 7s ease forwards;
-}
 @keyframes anim {
     to {
         fill: white;
@@ -167,6 +136,7 @@ section {
 
     animation: anim 4s ease forwards;
     animation: anim2 4s ease forwards;
+    animation-delay: .8s;
 }
 
 @keyframes anim {
@@ -194,7 +164,7 @@ section {
 .clip-path-anim {
     width: 500px;
     height: 500px;
-    background: url('/web1.jpg');
+    background: url('web1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -202,7 +172,7 @@ section {
     clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
    /* animation: 3.5s clip-anim infinite; */
 }
-
+/* 
 @keyframes clip-anim {
    0% {
        clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
@@ -213,7 +183,7 @@ section {
    100% {
    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
    }
-}
+} */
 
 
 .wrapper {
