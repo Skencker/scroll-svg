@@ -35,7 +35,6 @@ const options = {
   threshold: ratio
 }
 const handleIntersect = function (entries, observer) {
-  // console.log(entries)
   entries.forEach(function (entry) {
     // console.log(entry.intersectionRatio)
     // console.log(entry)
