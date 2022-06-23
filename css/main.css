@@ -30,7 +30,6 @@ section {
     display: grid;
     place-content: center;
     font-size: 4em;
-    color: black
 }
 
 .two {
@@ -43,6 +42,7 @@ section {
 
 .two h5 {
     margin-top: 300px;
+    padding-right: 150px;
 }
 
 .svg-circle {
@@ -176,9 +176,9 @@ section {
 
 .img-coffee {
     position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 30%;
+    top: 75%;
+    left: 50%;
+    margin-left: 2.5rem;
 
 }
 .clip-path-anim {
@@ -206,6 +206,14 @@ section {
 }
 
 
+.wrapper {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
 
 
-
+.container-cafe {
+    position: relative;
+}
