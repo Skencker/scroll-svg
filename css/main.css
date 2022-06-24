@@ -41,12 +41,20 @@ section {
 }
 
 .two h5 {
-    margin-top: 300px;
-    padding-right: 150px;
+    position: absolute;
+    height: 100vh;
+    width: 50vh;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50% -50%);
+    font-size: 3rem;
 }
 
 .svg-circle {
     position: absolute;
+    top: -70%;
+    left: -20%;
+    transform: translate(-50% -50%);
 }
 
 /* mot animé  */
@@ -154,10 +162,8 @@ section {
 }
 
 .img-coffee {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    margin-left: 6rem;
+
+    margin-left: 1rem;
 
 }
 .clip-path-anim {
@@ -194,5 +200,11 @@ section {
 
 
 .container-cafe {
-    position: relative;
+    position: absolute;
+    height: 100vh;
+    width: 50vh;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50% -50%);
+
 }
