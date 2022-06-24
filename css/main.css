@@ -25,6 +25,7 @@ svg {
     height: 80%;
 }
 
+
 section {
     height: 100vh;
     display: grid;
@@ -52,94 +53,21 @@ section {
 
 .svg-circle {
     position: absolute;
-    top: -70%;
-    left: -20%;
+    top: -65%;
     transform: translate(-50% -50%);
 }
 
-/* mot animé  */
-.icone-move {
-    position: absolute;
-    top: 80%;
-    left: 40%;
-    transform: translate(-50%,-50%);
-}
-.icone-logo {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%,-50%);
-}
-
-.carre-bord {
-    position: absolute;
-    top: 2%;
-    left: 67.5%;
-    width: 375px;
-    height: 330px;
-    background-color: rgb(22, 249, 166);
-}
-.carre-bg {
-    position: absolute;
-    top: 8%;
-    left: 8%;
-    width: 320px;
-    height: 275px;
-    background-color: white;
-}
-.carre-bg-bord {
-    position: absolute;
-    top: 20%;
-    left: 0%;
-    width: 375px;
-    height: 200px;
-    background-color: white;
-}
-.icone-move path:nth-child(1) {
-    stroke-dasharray: 1000px;
-    stroke-dashoffset: 1000px;
-    animation: anim 7s ease  forwards;
-}
-.icone-logo path:nth-child(1) {
-    stroke-dasharray: 1000px;
-    stroke-dashoffset: 1000px;
-    /* fill: black; */
-    animation: anim 7s ease forwards, fill 4.5s linear forwards ;;
-}
-@keyframes anim {
-    to {
-        fill: white;
-        stroke-dashoffset: 0;
-    }
-    
-}
-@keyframes fill {
-    0% {
-
-        fill: transparent;
-    }
-    80% {
-
-        fill: transparent;
-    }
-    100% {
-        fill: black;
-    }
-    
-}
-
-/* animation circle  */
+/* anime fusée  */
 .filled {
     opacity: 0;
- 
 }
+
 .filled-reveal {
     opacity: 1;
     stroke: black;
     stroke-width: 3;
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    /* transition: stroke-dashoffset 0.4s ease-in-out; */
 
     animation: anim 4s ease forwards;
     animation: anim2 4s ease forwards;
@@ -161,15 +89,10 @@ section {
     }
 }
 
-.img-coffee {
-
-    margin-left: 1rem;
-
-}
 .clip-path-anim {
     width: 500px;
     height: 500px;
-    background: url('./web1.jpg');
+    background: url('/web1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -189,16 +112,6 @@ section {
    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
    }
 } */
-
-
-.wrapper {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50% -50%);
-}
-
-
 .container-cafe {
     position: absolute;
     height: 100vh;
@@ -206,5 +119,65 @@ section {
     top: 60%;
     left: 60%;
     transform: translate(-50% -50%);
+}
 
+.logo-vec {
+    width: 100vh;
+    animation: fill 3s ease forwards ; 
+}
+
+.logo-vec path:nth-child(1) {
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    animation: line-anim 3s ease forwards;
+    
+}
+.logo-vec path:nth-child(2) {
+    stroke-dasharray:  70;
+    stroke-dashoffset: 70;
+    animation: line-anim 3s ease forwards ;
+    
+}
+.logo-vec path:nth-child(3) {
+    stroke-dasharray:  50;
+    stroke-dashoffset: 50;
+    animation: line-anim 3s ease forwards ;
+    
+}
+.logo-vec path:nth-child(4) {
+    stroke-dasharray:  36;
+    stroke-dashoffset: 36;
+    animation: line-anim 3s ease forwards ;
+    
+}
+.logo-vec path:nth-child(5) {
+    stroke-dasharray:  79;
+    stroke-dashoffset: 79;
+    animation: line-anim 3s ease forwards;
+    
+}
+.logo-vec path:nth-child(6) {
+    stroke-dasharray:  81;
+    stroke-dashoffset: 81;
+    animation: line-anim 3s ease forwards ;
+    
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    0% {
+
+        fill: transparent;
+    }
+    80% {
+
+        fill: transparent;
+    }
+    100% {
+        fill: black;
+    }
 }
