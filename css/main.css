@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'Futura';
+    src: url('/futura/Futura\ Bold\ font.ttf');
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +21,7 @@ body {
     height: 100%;
     text-align: center;
     overflow: hidden;
+    z-index: -1000;
 }
 
 svg {
@@ -27,7 +31,7 @@ svg {
 
 
 section {
-    height: 100vh;
+    height: 75vh;
     display: grid;
     place-content: center;
     font-size: 4em;
@@ -213,5 +217,111 @@ section {
   .button:hover .outer-circle {
     transform: rotate(360deg);
   }
+
+  /* boutons */
+
+  .fill:hover,
+  .fill:focus {
+    box-shadow: inset 0 0 0 3em var(--hover);
+  }
+  
+  .pulse:hover,
+  .pulse:focus {
+    -webkit-animation: pulse 1s;
+            animation: pulse 1s;
+    box-shadow: 0 0 0 1em transparent;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+  .close:hover,
+  .close:focus {
+    box-shadow: inset -4.5em 0 0 0 var(--hover), inset 4.5em 0 0 0 var(--hover);
+  }
+  
+  .raise:hover,
+  .raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.50em);
+  }
+  
+  .up:hover,
+  .up:focus {
+    box-shadow: inset 0 -5.25em 0 0 var(--hover);
+  }
+  
+  .slide:hover,
+  .slide:focus {
+    box-shadow: inset 8.5em 0 0 0 var(--hover);
+  }
+  
+  .offset {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+  }
+  .offset:hover, .offset:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }  
+  .raise,
+  .fill,
+  .pulse,
+  .close,
+  .up,
+  .slide,
+  .offset {
+    --color: #00F094;
+    --hover: #00F094;
+  }
+  
+  button {
+    border-color: #00F094;
+    color: black;
+    transition: 0.25s;
+  }
+  button:hover, button:focus {
+    border-color: var(--color);
+  }
+  
+  
+  button {
+    text-transform: uppercase;
+    background: none;
+    border:3px solid;
+    font-family: 'Futura';
+    font-size: 20px;
+    margin: 0.5em;
+    padding: 0.1em 2em; 
+    border:  #00F094 solid 7px;
+    width: 180px;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+  }
+
+  button::before {
+    content: '';
+    background-color: white;
+    width: 8px;
+    height: 35px;
+    display: block;
+    transform: translate(-600%, 80%);
+  }
+
+  button::after {
+    content: '';
+    background-color: white;
+    width: 8px;
+    height: 35px;
+    display: block;
+    transform: translate(1570%, -80%);
+  }
+
 
 	
