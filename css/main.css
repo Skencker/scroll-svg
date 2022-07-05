@@ -280,6 +280,14 @@ section {
     --color: #00F094;
     --hover: #00F094;
   }
+
+  .select {
+    background-color: #00F094;
+  }
+
+  .select:hover {
+    border: #00F094;
+  }
   
   button {
     border-color: #00F094;
