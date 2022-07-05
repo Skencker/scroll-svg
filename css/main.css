@@ -299,13 +299,14 @@ section {
     font-size: 20px;
     margin: 0.5em;
     padding: 0.1em 2em; 
-    border:  #00F094 solid 7px;
+    border:  #00F094 solid 5px;
     width: 180px;
+    height: 50px;
     letter-spacing: 0.2rem;
     cursor: pointer;
   }
 
-  button::before {
+  /* button::before {
     content: '';
     background-color: white;
     width: 8px;
@@ -321,7 +322,7 @@ section {
     height: 35px;
     display: block;
     transform: translate(1570%, -80%);
-  }
+  } */
 
 
 	
