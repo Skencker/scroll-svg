@@ -29,7 +29,7 @@ for(let i = 0; i < pathL.length; i++ ) {
 }
 //  console.log(pathL.getTotalLength());
 
-//animation du cercle au scroll
+//animation de la fusée au vue du dessin
 const el = document.querySelector('.filled')
 const ratio = .2
 const options = {
