@@ -245,7 +245,7 @@ section {
   }
   .close:hover,
   .close:focus {
-    box-shadow: inset -4.5em 0 0 0 var(--hover), inset 4.5em 0 0 0 var(--hover);
+    box-shadow: inset -6.5em 0 0 0 var(--hover), inset 6.5em 0 0 0 var(--hover);
   }
   
   .raise:hover,
@@ -261,7 +261,7 @@ section {
   
   .slide:hover,
   .slide:focus {
-    box-shadow: inset 8.5em 0 0 0 var(--hover);
+    box-shadow: inset 12em 0 0 0 var(--hover);
   }
   
   .offset {
@@ -283,10 +283,11 @@ section {
 
   .select {
     background-color: #00F094;
+    border: none;
   }
 
   .select:hover {
-    border: #00F094;
+    border: none;
   }
   
   button {
@@ -304,7 +305,7 @@ section {
     background: none;
     border:3px solid;
     font-family: 'Futura';
-    font-size: 20px;
+    font-size: 15px;
     margin: 0.5em;
     padding: 0.1em 2em; 
     border:  #00F094 solid 5px;
