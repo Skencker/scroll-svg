@@ -1,109 +1,115 @@
 @font-face {
-    font-family: 'Futura';
-    src: url('../futura/futura_medium_condensed_bt.ttf');
+  font-family: "Futura";
+  src: url("../futura/futura_medium_condensed_bt.ttf");
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 500vh;
-    margin: 0;
+  height: 500vh;
+  margin: 0;
 }
 
 .line-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    overflow: hidden;
-    z-index: -1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  z-index: -1000;
 }
 
 svg {
-    display: inline-block;
-    height: 80%;
+  display: inline-block;
+  height: 80%;
 }
 
-
 section {
-    height: 75vh;
-    display: grid;
-    place-content: center;
-    font-size: 4em;
+  height: 75vh;
+  display: grid;
+  place-content: center;
+  font-size: 4em;
 }
 
 .two {
-    color: black;
-    font-size: 6rem;
-    position: relative;
-    overflow: hidden;
-    display: flex;
+  color: black;
+  font-size: 6rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
 }
 
 .two h5 {
-    position: absolute;
-    height: 100vh;
-    width: 50vh;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50% -50%);
-    font-size: 3rem;
+  position: absolute;
+  height: 100vh;
+  width: 50vh;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50% -50%);
+  font-size: 3rem;
 }
 
 .svg-circle {
-    position: absolute;
-    top: -65%;
-    transform: translate(-50% -50%);
+  position: absolute;
+  top: -65%;
+  transform: translate(-50% -50%);
 }
 
 /* anime fusée  */
 .filled {
-    opacity: 0;
+  opacity: 0;
 }
 
 .filled-reveal {
-    opacity: 1;
-    stroke: black;
-    stroke-width: 3;
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
+  opacity: 1;
+  stroke: black;
+  stroke-width: 3;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
 
-    animation: anim 4s ease forwards;
-    animation: anim2 4s ease forwards;
-    animation-delay: .8s;
+  animation: anim 4s ease forwards;
+  animation: anim2 4s ease forwards;
+  animation-delay: 0.8s;
 }
 
 @keyframes anim {
-    to {
-        stroke-dashoffset: 0;
-    }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 @keyframes anim2 {
-    from {
-        transform: translate(0, 0);
-    }
-    to {
-        transform: translate(-50px, -150px);
-        stroke-dashoffset: 0;
-    }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-50px, -150px);
+    stroke-dashoffset: 0;
+  }
 }
 
 .clip-path-anim {
-    width: 500px;
-    height: 500px;
-    background: url('../web1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-   /* animation: 3.5s clip-anim infinite; */
-   
+  width: 500px;
+  height: 500px;
+  background: url("../web1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  clip-path: polygon(
+    40% 0%,
+    40% 20%,
+    100% 20%,
+    100% 80%,
+    40% 80%,
+    40% 100%,
+    0% 50%
+  );
+  /* animation: 3.5s clip-anim infinite; */
 }
 /* 
 @keyframes clip-anim {
@@ -118,205 +124,198 @@ section {
    }
 } */
 .container-cafe {
-    position: absolute;
-    height: 100vh;
-    width: 50vh;
-    top: 60%;
-    left: 60%;
-    transform: translate(-50% -50%);
+  position: absolute;
+  height: 100vh;
+  width: 50vh;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50% -50%);
 }
 
 .logo-vec {
-    width: 100vh;
-    animation: fill 3s ease forwards ; 
+  width: 100vh;
+  animation: fill 3s ease forwards;
 }
 
 .logo-vec path:nth-child(1) {
-    stroke-dasharray: 70;
-    stroke-dashoffset: 70;
-    animation: line-anim 3s ease forwards;
-    
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+  animation: line-anim 3s ease forwards;
 }
 .logo-vec path:nth-child(2) {
-    stroke-dasharray:  70;
-    stroke-dashoffset: 70;
-    animation: line-anim 3s ease forwards ;
-    
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+  animation: line-anim 3s ease forwards;
 }
 .logo-vec path:nth-child(3) {
-    stroke-dasharray:  50;
-    stroke-dashoffset: 50;
-    animation: line-anim 3s ease forwards ;
-    
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: line-anim 3s ease forwards;
 }
 .logo-vec path:nth-child(4) {
-    stroke-dasharray:  36;
-    stroke-dashoffset: 36;
-    animation: line-anim 3s ease forwards ;
-    
+  stroke-dasharray: 36;
+  stroke-dashoffset: 36;
+  animation: line-anim 3s ease forwards;
 }
 .logo-vec path:nth-child(5) {
-    stroke-dasharray:  79;
-    stroke-dashoffset: 79;
-    animation: line-anim 3s ease forwards;
-    
+  stroke-dasharray: 79;
+  stroke-dashoffset: 79;
+  animation: line-anim 3s ease forwards;
 }
 .logo-vec path:nth-child(6) {
-    stroke-dasharray:  81;
-    stroke-dashoffset: 81;
-    animation: line-anim 3s ease forwards ;
-    
+  stroke-dasharray: 81;
+  stroke-dashoffset: 81;
+  animation: line-anim 3s ease forwards;
 }
 
 @keyframes line-anim {
-    to {
-        stroke-dashoffset: 0;
-    }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 @keyframes fill {
-    0% {
-
-        fill: transparent;
-    }
-    80% {
-
-        fill: transparent;
-    }
-    100% {
-        fill: black;
-    }
+  0% {
+    fill: transparent;
+  }
+  80% {
+    fill: transparent;
+  }
+  100% {
+    fill: black;
+  }
 }
 
 /* rotation  */
 .rotate {
-    transform: translate(30%);
+  transform: translate(30%);
 }
 
 .menu-button {
-    transition: fill 500ms;
-  }
-  
-  .outer-circle {
-    transform-origin: 60px 60px;
-    transition: transform 2s cubic-bezier(0.62, 0.005, 0, 1.005);
-  }
-  
-  .button {
-    max-width: 12rem;
-    background: none;
-    border: 0 none;
-    font-size: 0;
-    cursor: pointer;
-  }
-  .button svg {
-    width: 100%;
-    height: auto;
-  }
-  .button:hover .menu-button {
-    fill: #00F094;
-  }
-  .button:hover .outer-circle {
-    transform: rotate(360deg);
-  }
+  transition: fill 500ms;
+}
 
-  /* boutons */
+.outer-circle {
+  transform-origin: 60px 60px;
+  transition: transform 2s cubic-bezier(0.62, 0.005, 0, 1.005);
+}
 
-  .fill:hover,
-  .fill:focus {
-    box-shadow: inset 0 0 0 3em var(--hover);
-  }
-  
-  .pulse:hover,
-  .pulse:focus {
-    -webkit-animation: pulse 1s;
-            animation: pulse 1s;
-    box-shadow: 0 0 0 1em transparent;
-  }
-  
-  @-webkit-keyframes pulse {
-    0% {
-      box-shadow: 0 0 0 0 var(--hover);
-    }
-  }
-  
-  @keyframes pulse {
-    0% {
-      box-shadow: 0 0 0 0 var(--hover);
-    }
-  }
-  .close:hover,
-  .close:focus {
-    box-shadow: inset -6.5em 0 0 0 var(--hover), inset 6.5em 0 0 0 var(--hover);
-  }
-  
-  .raise:hover,
-  .raise:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.50em);
-  }
-  
-  .up:hover,
-  .up:focus {
-    box-shadow: inset 0 -5.25em 0 0 var(--hover);
-  }
-  
-  .slide:hover,
-  .slide:focus {
-    box-shadow: inset 12em 0 0 0 var(--hover);
-  }
-  
-  .offset {
-    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
-  }
-  .offset:hover, .offset:focus {
-    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
-  }  
-  .raise,
-  .fill,
-  .pulse,
-  .close,
-  .up,
-  .slide,
-  .offset {
-    --color: #00F094;
-    --hover: #00F094;
-  }
+.button {
+  max-width: 12rem;
+  background: none;
+  border: 0 none;
+  font-size: 0;
+  cursor: pointer;
+}
+.button svg {
+  width: 100%;
+  height: auto;
+}
+.button:hover .menu-button {
+  fill: #00f094;
+}
+.button:hover .outer-circle {
+  transform: rotate(360deg);
+}
 
-  .select {
-    background-color: #00F094;
-    border: none;
-  }
+/* boutons */
 
-  .select:hover {
-    border: none;
-  }
-  
-  button {
-    border-color: #00F094;
-    color: black;
-    transition: 0.25s;
-  }
-  button:hover, button:focus {
-    border-color: var(--color);
-  }
-  
-  
-  button {
-    text-transform: uppercase;
-    background: none;
-    border:3px solid;
-    font-family: 'Futura';
-    font-size: 15px;
-    margin: 0.5em;
-    padding: 0.1em 2em; 
-    border:  #00F094 solid 5px;
-    width: 180px;
-    height: 50px;
-    letter-spacing: 0.2rem;
-    cursor: pointer;
-  }
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 3em var(--hover);
+}
 
-  /* button::before {
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 1em transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover,
+.close:focus {
+  box-shadow: inset -6.5em 0 0 0 var(--hover), inset 6.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.5em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -5.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 12em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover,
+.offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+.raise,
+.fill,
+.pulse,
+.close,
+.up,
+.slide,
+.offset {
+  --color: #00f094;
+  --hover: #00f094;
+}
+
+.select {
+  background-color: #00f094;
+  border: none;
+}
+
+.select:hover {
+  border: none;
+}
+
+button {
+  border-color: #00f094;
+  color: black;
+  transition: 0.25s;
+}
+button:hover,
+button:focus {
+  border-color: var(--color);
+}
+
+button {
+  text-transform: uppercase;
+  background: none;
+  border: 3px solid;
+  font-family: "Futura";
+  font-size: 15px;
+  margin: 0.5em;
+  padding: 0.1em 2em;
+  border: #00f094 solid 5px;
+  width: 180px;
+  height: 50px;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+/* button::before {
     content: '';
     background-color: white;
     width: 8px;
@@ -334,18 +333,18 @@ section {
     transform: translate(1570%, -80%);
   } */
 
+/* text animation  */
 
-	/* text animation  */
+h6 {
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: 1pt;
+  font-size: 30pt;
+  margin-bottom: 15px;
+  color: #00f094;
+}
 
-  h6 {
-    margin-top: 50px;
-    text-align: center;
-    letter-spacing: 1pt;
-    font-size: 30pt;
-    margin-bottom: 15px;
-    color: #00F094;
-  }
-  
+/*   
   p {
     margin: 0;
     text-transform: lowercase;
@@ -353,22 +352,227 @@ section {
     font-weight: 900;
     width: 50%;
     display: none;
-  }
-  h6:after {
-    content: "]";
+  } */
 
-  }
-  h6::before{
-    content: "[";
-  }
+.text-a {
+  margin-left: 200px;
+  width: 50%;
+  font-size: 20px;
+}
+h6:after {
+  content: "]";
+}
+h6::before {
+  content: "[";
+}
+h5:after {
+  content: "]";
+}
+h5::before {
+  content: "[";
+}
+
+#table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+#centeralign {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* text rotation .com .work */
+
+/*   
+  // 6 is the number of animation.
+  // Here, there are 4 lines :
   
-  #table {
-    display: table;
-    width: 100%;
-    height: 100%;
-  }
+  // 1 to 2
+  // 2 to 3
+  // 3 to 4
+  // 4 to 3
+  // 3 to 2
+  // 2 to 1
   
-  #centeralign {
-    display: table-cell;
-    vertical-align: middle;
+  // 6x + 6y = 100 (100% duration)
+  
+  // HERE : 
+  // y = 4 -> Animation between two lines
+  // x = 12.66 -> Time spent on a line
+  
+  // You can define a value and calculate the other if you want change speed or the number of lines */
+.wrapper {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  transform: translate(50%, 50%);
+}
+.position {
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 59%;
+  left: -17.5%;
+  height: 160px;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #00f094;
+  animation: delais 5s;
+}
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+.content__container__list {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 12s;
+  animation-name: change;
+  animation-duration: 12s;
+}
+.content__container__list__item {
+  line-height: 40px;
+  font-size: 50px;
+  margin: 0;
+}
+
+.color-blue {
+  color: #00f094;
+}
+.color-yellow {
+  color: #fee402;
+}
+
+.cls-1 {
+  animation: change-color 12s forwards;
+}
+
+
+
+@-webkit-keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
   }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+@keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  /* 49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  } */
+}
+
+@keyframes change-color {
+  0%,
+  12.66%,
+  100% {
+    fill: #00f094;
+  }
+  16.66%,
+  29.32% {
+   fill: #fee402;
+  }
+  33.32%,
+  45.98% {
+    fill: #00f094;
+  }
+  /* 49.98%,
+  62.64% {
+    fill: #fee402;
+  }
+  66.64%,
+  79.3% {
+    fill: #00f094;
+  }
+  83.3%,
+  95.96% {
+    fill: #fee402;
+  } */
+}
+
+
+@keyframes delais {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
