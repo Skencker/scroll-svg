@@ -31,9 +31,7 @@
     fill: #fff;
   }
   
-  body {
-    margin: 60px 50px 0;
-  }
+
   
   .wrapper:before, .wrapper:after {
     content: "";
@@ -48,4 +46,60 @@
   }
   .wrapper:after {
     right: -5px;
+  }
+  
+.logo-vec {
+  animation: fill 3s ease forwards;
+}
+
+.logo-vec path:nth-child(1) {
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+  animation: line-anim 3s ease forwards;
+}
+.logo-vec path:nth-child(2) {
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+  animation: line-anim 3s ease forwards;
+}
+.logo-vec path:nth-child(3) {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: line-anim 3s ease forwards;
+}
+.logo-vec path:nth-child(4) {
+  stroke-dasharray: 36;
+  stroke-dashoffset: 36;
+  animation: line-anim 3s ease forwards;
+}
+.logo-vec path:nth-child(5) {
+  stroke-dasharray: 79;
+  stroke-dashoffset: 79;
+  animation: line-anim 3s ease forwards;
+}
+.logo-vec path:nth-child(6) {
+  stroke-dasharray: 81;
+  stroke-dashoffset: 81;
+  animation: line-anim 3s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  0% {
+    fill: transparent;
+  }
+  80% {
+    fill: transparent;
+  }
+  100% {
+    fill: black;
+  }
+}
+
+  .point {
+
   }

@@ -23,10 +23,11 @@
    path.style.strokeDashoffset = length - draw;
  }
 
- const pathL = document.querySelectorAll(".logo-vec path");
-for(let i = 0; i < pathL.length; i++ ) {
-  // console.log(`Letter ${i} is ${pathL[i].getTotalLength()}`);
-}
+//  const pathL = document.querySelectorAll(".lettre");
+//  console.log(pathL)
+// for(let i = 0; i < pathL.length; i++ ) {
+//   console.log(`Letter ${i} is ${pathL[i].getTotalLength()}`);
+// }
 //  console.log(pathL.getTotalLength());
 
 //animation de la fusée au vue du dessin
@@ -55,7 +56,7 @@ const observer = new IntersectionObserver(handleIntersect, options)
 observer.observe(document.querySelector('.svg-circle'))
 
 
-//animation text 
+//animation text .com
 function typeEffect(element, speed) {
 	var text = element.innerHTML;
 	element.innerHTML = "";

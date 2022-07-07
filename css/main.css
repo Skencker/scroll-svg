@@ -133,39 +133,55 @@ section {
 }
 
 .logo-vec {
-  width: 100vh;
-  animation: fill 3s ease forwards;
+  animation: fill 4s ease forwards;
+}
+.lettre {
+  animation: opacity 2s linear 1s;
+}
+.logo-vec .lettre-p {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation:line-anim 3s 2s ease forwards;
+}
+.logo-vec .lettre-a {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: line-anim 3s 2s ease forwards;
+}
+.logo-vec .lettre-t {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: line-anim 3s 2s ease forwards;
+}
+.logo-vec .lettre-i {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: line-anim 3s 2s ease forwards;
+}
+.logo-vec .lettre-o {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: line-anim 3s 2s ease forwards;
+}
+.logo-vec .lettre-n {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: line-anim 3s 2s ease forwards;
 }
 
-.logo-vec path:nth-child(1) {
-  stroke-dasharray: 70;
-  stroke-dashoffset: 70;
-  animation: line-anim 3s ease forwards;
+.logo-vec .carre {
+  opacity: 0;
+  fill: #00f094;
+  animation: change-color 12s 4s forwards, appear 3s 1s forwards;
 }
-.logo-vec path:nth-child(2) {
-  stroke-dasharray: 70;
-  stroke-dashoffset: 70;
-  animation: line-anim 3s ease forwards;
-}
-.logo-vec path:nth-child(3) {
-  stroke-dasharray: 50;
-  stroke-dashoffset: 50;
-  animation: line-anim 3s ease forwards;
-}
-.logo-vec path:nth-child(4) {
-  stroke-dasharray: 36;
-  stroke-dashoffset: 36;
-  animation: line-anim 3s ease forwards;
-}
-.logo-vec path:nth-child(5) {
-  stroke-dasharray: 79;
-  stroke-dashoffset: 79;
-  animation: line-anim 3s ease forwards;
-}
-.logo-vec path:nth-child(6) {
-  stroke-dasharray: 81;
-  stroke-dashoffset: 81;
-  animation: line-anim 3s ease forwards;
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 @keyframes line-anim {
@@ -181,7 +197,7 @@ section {
     fill: transparent;
   }
   100% {
-    fill: black;
+    fill: #001d3d;
   }
 }
 
@@ -413,6 +429,7 @@ h5::before {
   position: relative;
 }
 .content {
+  opacity: 0;
   position: absolute;
   top: 59%;
   left: -17.5%;
@@ -422,7 +439,7 @@ h5::before {
   font-size: 35px;
   line-height: 40px;
   color: #00f094;
-  animation: delais 5s;
+  animation: opacity 1s 3s forwards;
 }
 .content__container {
   font-weight: 600;
@@ -443,8 +460,10 @@ h5::before {
   list-style: none;
   -webkit-animation-name: change;
   -webkit-animation-duration: 12s;
+  -webkit-animation-delay: 4s;
   animation-name: change;
   animation-duration: 12s;
+  animation-delay: 4s;
 }
 .content__container__list__item {
   line-height: 40px;
@@ -459,18 +478,19 @@ h5::before {
   color: #fee402;
 }
 
-.cls-1 {
-  animation: change-color 12s forwards;
+.point {
+  fill: #00f094;
+  animation: change-color 12s 4s forwards;
 }
 
 
 
 @-webkit-keyframes opacity {
-  0%,
-  100% {
+  0%
+ {
     opacity: 0;
   }
-  50% {
+  100% {
     opacity: 1;
   }
 }
@@ -502,11 +522,10 @@ h5::before {
   }
 }
 @keyframes opacity {
-  0%,
-  100% {
+  0%{
     opacity: 0;
   }
-  50% {
+  100% {
     opacity: 1;
   }
 }
