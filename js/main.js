@@ -25,7 +25,7 @@
 
  const pathL = document.querySelectorAll(".logo-vec path");
 for(let i = 0; i < pathL.length; i++ ) {
-  console.log(`Letter ${i} is ${pathL[i].getTotalLength()}`);
+  // console.log(`Letter ${i} is ${pathL[i].getTotalLength()}`);
 }
 //  console.log(pathL.getTotalLength());
 
