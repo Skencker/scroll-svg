@@ -136,7 +136,7 @@ section {
   animation: fill 4s ease forwards;
 }
 .lettre {
-  animation: opacity 2s linear 1s;
+  animation: opacity 3s linear 1s;
 }
 .logo-vec .lettre-p {
   stroke-dasharray: 500;
@@ -172,8 +172,10 @@ section {
 .logo-vec .carre {
   opacity: 0;
   fill: #00f094;
-  animation: change-color 12s 4s forwards, appear 3s 1s forwards;
+  animation: change-color 12s 4s forwards, appear 3s 2s forwards;
 }
+
+
 
 @keyframes appear {
   from {
@@ -479,8 +481,10 @@ h5::before {
 }
 
 .point {
+  opacity: 0;
   fill: #00f094;
-  animation: change-color 12s 4s forwards;
+  animation: change-color 12s 4s forwards, appear 1s 1s forwards;
+
 }
 
 
