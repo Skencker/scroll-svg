@@ -133,40 +133,21 @@ section {
 }
 
 .logo-vec {
-  animation: fill 4s ease forwards;
+  animation: fill 6s ease forwards;
 }
 .lettre {
-  animation: opacity 3s linear 1s;
+  animation: opacity 4s linear 1s;
 }
-.logo-vec .lettre-p {
+.logo-vec .lettre-p,
+.logo-vec .lettre-a,
+.logo-vec .lettre-t,
+.logo-vec .lettre-i,
+.logo-vec .lettre-o,
+.logo-vec .lettre-n
+ {
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
-  animation:line-anim 3s 2s ease forwards;
-}
-.logo-vec .lettre-a {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: line-anim 3s 2s ease forwards;
-}
-.logo-vec .lettre-t {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: line-anim 3s 2s ease forwards;
-}
-.logo-vec .lettre-i {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: line-anim 3s 2s ease forwards;
-}
-.logo-vec .lettre-o {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: line-anim 3s 2s ease forwards;
-}
-.logo-vec .lettre-n {
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  animation: line-anim 3s 2s ease forwards;
+  animation:line-anim 10s 3s ease forwards;
 }
 
 .logo-vec .carre {
@@ -175,7 +156,33 @@ section {
   animation: change-color 12s 4s forwards, appear 3s 2s forwards;
 }
 
+.point {
+  opacity: 0;
+  fill: #00f094;
+  animation: change-color 12s 4s forwards, appearPoint 2s  forwards;
 
+}
+
+@keyframes appearPoint {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes appear {
   from {
@@ -423,8 +430,8 @@ h5::before {
   // You can define a value and calculate the other if you want change speed or the number of lines */
 .wrapper {
   position: absolute;
-  top: 0%;
-  left: 20%;
+  top: -10%;
+  left: 10%;
   transform: translate(50%, 50%);
 }
 .position {
@@ -433,15 +440,15 @@ h5::before {
 .content {
   opacity: 0;
   position: absolute;
-  top: 59%;
-  left: -17.5%;
+  top: 62%;
+  left: -10%;
   height: 160px;
   overflow: hidden;
   font-family: "Lato", sans-serif;
   font-size: 35px;
   line-height: 40px;
   color: #00f094;
-  animation: opacity 1s 3s forwards;
+  animation: opacity 1s 5s forwards;
 }
 .content__container {
   font-weight: 600;
@@ -480,12 +487,7 @@ h5::before {
   color: #fee402;
 }
 
-.point {
-  opacity: 0;
-  fill: #00f094;
-  animation: change-color 12s 4s forwards, appear 1s 1s forwards;
 
-}
 
 
 
@@ -498,7 +500,7 @@ h5::before {
     opacity: 1;
   }
 }
-@-webkit-keyframes change {
+/* @-webkit-keyframes change {
   0%,
   12.66%,
   100% {
@@ -524,7 +526,7 @@ h5::before {
   95.96% {
     transform: translate3d(0, -25%, 0);
   }
-}
+} */
 @keyframes opacity {
   0%{
     opacity: 0;
@@ -588,7 +590,7 @@ h5::before {
     fill: #fee402;
   } */
 }
-
+/* 
 
 @keyframes delais {
   from {
@@ -597,5 +599,5 @@ h5::before {
   to {
     opacity: 100%;
   }
-}
+} */
 
