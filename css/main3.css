@@ -26,11 +26,11 @@ body {
     font-weight: 700;
     font-size: 35px;
   }
-  .wrapper svg > rect {
+  .wrapper svg > .rect {
     -webkit-mask: url(#mask);
     mask: url(#mask);
   }
-  .wrapper svg rect {
+  .wrapper svg .rect {
     fill: #fff;
   }
  
