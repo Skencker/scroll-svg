@@ -37,6 +37,7 @@ body {
     opacity: 0;
     fill: #fff;
   }
+  
  
   .wrapper:before, .wrapper:after {
     content: "";
@@ -84,6 +85,11 @@ body {
     fill: #00f094;
     animation: change-color 12s 4s forwards, appearPoint 2s  forwards;
   
+  }
+
+  .fixe {
+    opacity: 0;
+
   }
   
   @keyframes appearPoint {
