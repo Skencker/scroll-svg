@@ -133,7 +133,7 @@ section {
 }
 
 .logo-vec {
-  animation: fill 6s ease forwards;
+  animation: fill 5s ease forwards;
 }
 .lettre {
   animation: opacity 4s linear 1s;
