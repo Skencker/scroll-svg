@@ -17,11 +17,20 @@ h1 {
 
 .color-green {
   color: #00f094;
-  font-weight: 900;
+  font-weight: 800;
+}
+.color-blue {
+  color: #001D3D;
+}
+.color-grey {
+  color:  #A0A9AA;
 }
 .color-black {
   color: black;
   font-weight: 900;
+}
+.font-bold {
+  font-weight:bolder;
 }
 
 .bg-green {
@@ -48,8 +57,13 @@ h1 {
 .mg-t {
   padding-top: 150px;
 }
+.letter-space {
+  letter-spacing: 2px;
+}
+
 input {
-  border-radius: none;
+  border: 1px solid #00f094 !important;
+  border-radius: 0 !important;
 }
 
 .content {
