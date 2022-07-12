@@ -12,6 +12,7 @@ h1 {
   font-family: "futura";
   font-size: 27px;
   letter-spacing: 2px;
+  padding-bottom: 10px;
 }
 
 .color-green {
@@ -33,6 +34,7 @@ h1 {
 .font-shadow {
   font-family: "Shadows Into Light", cursive;
   font-size: 24px;
+  font-weight: 900;
 }
 
 .btn-green {
@@ -172,5 +174,8 @@ input {
 @media screen and (max-width: 400px) {
   .cafe {
     width: 70%;
+  }
+  .mg-t {
+    padding-top: 70px;
   }
 }
