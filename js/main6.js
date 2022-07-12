@@ -51,6 +51,6 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".wrap:after{content: '  ]'; background:white; color: #001D3D}";
+    css.innerHTML = ".wrap:after{content:' ]';padding-right:100px; background:white; color: #001D3D}";
     document.body.appendChild(css);
 };
