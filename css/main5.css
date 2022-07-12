@@ -64,16 +64,18 @@ input {
   font-weight: 600;
   overflow: hidden;
   height: 40px;
-  padding: 0 40px;
+  padding: 0px 40px;
 }
 .content__container:before {
   content: "[";
   left: 0;
+  z-index: 10;
 }
 .content__container:after {
   content: "]";
   position: absolute;
   right: 0;
+  z-index: 10;
 }
 .content__container:after,
 .content__container:before {
@@ -176,5 +178,13 @@ input {
   }
   .mg-t {
     padding-top: 70px;
+  }
+  .content {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .content__container {
+   
+    padding: 0px 20px;
   }
 }
