@@ -73,12 +73,13 @@ input {
   font-size: 25px;
   line-height: 40px;
   color: white;
+  font-family: "futura";
 }
 .content__container {
   font-weight: 600;
   overflow: hidden;
   height: 40px;
-  padding: 0px 40px;
+  padding: 0px 30px;
 }
 .content__container:before {
   content: "[";
