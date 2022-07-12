@@ -11,6 +11,7 @@
   h1{
     font-family: "futura";
     font-size: 27px;
+    letter-spacing: 5px;
   }
 
   .color-green  {
@@ -27,6 +28,7 @@
   }
   .font-mont {
     font-family: "Montserrat";
+    font-size: 18px;
   }
   .font-shadow {
     font-family: 'Shadows Into Light', cursive;
