@@ -11,7 +11,7 @@
   h1{
     font-family: "futura";
     font-size: 27px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
   }
 
   .color-green  {
@@ -41,6 +41,10 @@
     padding: 10px;
     color: white;
     font-weight: 600;
+  }
+
+  .mg-t {
+    padding-top: 200px;
   }
   input{
     border-radius: none;
