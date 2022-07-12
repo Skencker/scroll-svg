@@ -30,7 +30,7 @@ h1 {
   font-weight: 900;
 }
 .font-bold {
-  font-weight:bolder;
+  font-weight:900;
 }
 
 .bg-green {
@@ -205,3 +205,19 @@ input {
     padding: 0px 20px;
   }
 }
+
+a {
+  text-decoration: none !important;
+  background-color: #00f094;
+  font-size: 25px;
+  font-family: 'futura';
+  color: white !important;
+ }
+ 
+
+ .wrap {
+  color: #001D3D;
+  padding-left: 10px;
+ }
+
+ 
