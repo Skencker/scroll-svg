@@ -80,7 +80,7 @@ input {
   font-weight: 500;
   overflow: hidden;
   height: 40px;
-  padding: 0px 30px;
+  padding: 0px 40px;
 }
 .content__container:before {
   content: "[";
