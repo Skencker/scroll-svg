@@ -30,7 +30,7 @@ h1 {
   font-weight: 900;
 }
 .font-bold {
-  font-weight:900;
+  font-weight:700;
 }
 
 .bg-green {
@@ -212,6 +212,8 @@ a {
   font-size: 25px;
   font-family: 'futura';
   color: white !important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .font-size-25 {
