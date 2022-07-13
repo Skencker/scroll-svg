@@ -232,7 +232,7 @@ a {
   /* animation logo  */
 
   .svg-logo {
-    animation: fill 5s ease forwards;
+    animation: fill 4s ease forwards;
   }
   .lettre {
     animation: opacity 4s linear 1s;
@@ -247,13 +247,13 @@ a {
   .svg-logo .carre {
     opacity: 0;
     fill: #00f094;
-    animation: change-color 12s 4s forwards, appear 3s 2s forwards;
+    animation: change-color 12s 2s forwards, appear 3s 2s forwards;
   }
   
   .svg-logo .point {
     opacity: 0;
     fill: #00f094;
-    animation: change-color 12s 4s forwards, appearPoint 2s  forwards;
+    animation: change-color 12s 2s forwards, appearPoint 2s  forwards;
   
   }
 
@@ -292,11 +292,11 @@ a {
     100% {
       fill: #00f094;
     }
-    16.66%,
+    /* 16.66%, */
     29.32% {
      fill: #fee402;
     }
-    33.32%,
+    /* 33.32%, */
     45.98% {
       fill: #00f094;
     }
@@ -333,13 +333,15 @@ a {
   }
 
   .com {
-    animation: change-color 12s 4s forwards, appear-com 12s 4s;
+    opacity: 0;
+    fill: #00f094;
+    animation: appear-com 12s 4.1s forwards;
   }
 
   .work {
-    opacity: 0;
+    opacity: 1;
     fill: #fee402;
-    animation: appear-work 12s 4s forwards;
+    /* animation: appear-work 12s 4s forwards; */
   }
 
 
@@ -378,6 +380,10 @@ a {
       fill: #00f094;
     }
   }
+
+
+
+
 
 
  
