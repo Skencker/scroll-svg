@@ -229,7 +229,155 @@ a {
 
 }
  
+  /* animation logo  */
 
+  .svg-logo {
+    animation: fill 5s ease forwards;
+  }
+  .lettre {
+    animation: opacity 4s linear 1s;
+  }
+  .svg-logo .lettre
+   {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation:line-anim 10s 3s ease forwards;
+  }
+  
+  .svg-logo .carre {
+    opacity: 0;
+    fill: #00f094;
+    animation: change-color 12s 4s forwards, appear 3s 2s forwards;
+  }
+  
+  .svg-logo .point {
+    opacity: 0;
+    fill: #00f094;
+    animation: change-color 12s 4s forwards, appearPoint 2s  forwards;
+  
+  }
+
+  @keyframes line-anim {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes fill {
+    0% {
+      fill: transparent;
+    }
+    80% {
+      fill: transparent;
+    }
+    100% {
+      fill: #001d3d;
+    }
+  }
+
+   
+  @-webkit-keyframes opacity {
+    0%
+   {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes change-color {
+    0%,
+    12.66%,
+    100% {
+      fill: #00f094;
+    }
+    16.66%,
+    29.32% {
+     fill: #fee402;
+    }
+    33.32%,
+    45.98% {
+      fill: #00f094;
+    }
+  }
+  
+  @keyframes appearPoint {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .com {
+    animation: change-color 12s 4s forwards, appear-com 12s 4s;
+  }
+
+  .work {
+    opacity: 0;
+    fill: #fee402;
+    animation: appear-work 12s 4s forwards;
+  }
+
+
+  @keyframes appear-com {
+    0%,
+    12.66%,
+    100% {
+      fill: #00f094;
+      opacity: 1;
+    }
+    16.66%,
+    29.32% {
+      opacity: 0;
+    }
+    33.32%,
+    45.98% {
+      fill: #00f094;
+      opacity: 1;
+    }
+  }
+  @keyframes appear-work {
+    0%,
+    12.66%,
+    100% {
+      fill: #00f094;
+      opacity: 0;
+    }
+    16.66%,
+    29.32% {
+      opacity: 1;
+      fill: #fee402;
+    }
+    33.32%,
+    45.98% {
+      opacity: 0;
+      fill: #00f094;
+    }
+  }
 
 
  
