@@ -15,22 +15,24 @@ h1 {
   padding-bottom: 10px;
 }
 
+/* custom  */
+
 .color-green {
   color: #00f094;
   font-weight: 800;
 }
 .color-blue {
-  color: #001D3D;
+  color: #001d3d;
 }
 .color-grey {
-  color:  #A0A9AA;
+  color: #a0a9aa;
 }
 .color-black {
   color: black;
   font-weight: 900;
 }
 .font-bold {
-  font-weight:700;
+  font-weight: 700;
 }
 .bg-green {
   /* color:#001D3D; */
@@ -54,16 +56,16 @@ h1 {
 }
 
 .btn-green:hover {
-  background-color: #001D3D;
-
+  background-color: #001d3d;
 }
 
 .mg-t {
-  padding-top: 120px;
+  padding-top: 70px;
 }
 .letter-space {
   letter-spacing: 2px;
 }
+/*input*/
 
 input {
   border: 1px solid #00f094 !important;
@@ -71,94 +73,75 @@ input {
 }
 
 input::placeholder {
-  color:#A0A9AA !important;
+  color: #a0a9aa !important;
   font-size: 14px;
 }
 
-.content {
-  position: absolute;
-  height: 160px;
-  overflow: hidden;
+a {
+  text-decoration: none !important;
+  background-color: #00f094;
   font-size: 25px;
-  line-height: 40px;
-  color: white;
   font-family: "futura";
-}
-.content__container {
-  font-weight: 500;
-  overflow: hidden;
-  height: 40px;
-  padding: 0px 40px;
-}
-.content__container:before {
-  content: "[";
-  left: 0;
-  z-index: 10;
-  color: #00f094;
-}
-.content__container:after {
-  content: "]";
-  position: absolute;
-  right: 0;
-  z-index: 10;
-}
-.content__container:after,
-.content__container:before {
-  position: absolute;
-  top: 0;
-  color: #001D3D;
-  font-size: 42px;
-  line-height: 30px;
-}
-.content__container__text {
-  display: inline;
-  float: left;
-  margin: 0;
-}
-.content__container__list {
-  margin-top: 0;
-  padding-left: 0;
-  text-align: center;
-  list-style: none;
-  -webkit-animation-name: change;
-  -webkit-animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-  animation-name: change;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-.content__container__list__item {
-  line-height: 40px;
-  margin: 0;
+  color: white !important;
+  margin-right: 5px;
 }
 
-@-webkit-keyframes change {
-  0%,
-  12.66%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  16.66%,
-  29.32% {
-    transform: translate3d(0, -25%, 0);
-  }
-  33.32%,
-  45.98% {
-    transform: translate3d(0, -50%, 0);
-  }
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -75%, 0);
-  }
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -50%, 0);
-  }
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -25%, 0);
+.font-size-25 {
+  font-size: 30px;
+  font-family: "futura";
+}
+
+/* animation logo avec video */
+
+.svg-logo-2 {
+  opacity: 0;
+  animation: appear 1s linear 8s forwards;
+}
+
+
+
+.svg-logo {
+  animation: fill 4s ease forwards;
+}
+.lettre {
+  animation: opacity 4s easer 1s;
+}
+.svg-logo .lettre {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: line-anim 10s 3s ease forwards;
+}
+
+.svg-logo .carre {
+  opacity: 0;
+  fill: #00f094;
+  animation: change-color 12s 2s forwards, appear 3s 2s forwards;
+}
+
+.svg-logo .point {
+  opacity: 0;
+  fill: #00f094;
+  animation: change-color 12s 2s forwards, appearPoint 2s forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
   }
 }
+
+@keyframes fill {
+  0% {
+    fill: transparent;
+  }
+  80% {
+    fill: transparent;
+  }
+  100% {
+    fill: #001d3d;
+  }
+}
+
 @keyframes opacity {
   0%,
   100% {
@@ -168,32 +151,98 @@ input::placeholder {
     opacity: 1;
   }
 }
-@keyframes change {
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes change-color {
   0%,
   12.66%,
   100% {
-    transform: translate3d(0, 0, 0);
+    fill: #00f094;
   }
-  16.66%,
+  /* 16.66%, */
   29.32% {
-    transform: translate3d(0, -25%, 0);
+    fill: #fee402;
   }
-  33.32%,
+  /* 33.32%, */
   45.98% {
-    transform: translate3d(0, -50%, 0);
+    fill: #00f094;
   }
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -75%, 0);
+}
+
+@keyframes appearPoint {
+  0% {
+    opacity: 0;
   }
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -50%, 0);
+  20% {
+    opacity: 1;
   }
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -25%, 0);
+  40% {
+    opacity: 0;
   }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* video dans texte  */
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  max-width: 1000px;
+}
+.wrapper video {
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 2.5px;
+  padding-left: 2px;
+  opacity: 0;
+  animation: appear 1s linear 9s forwards;
+}
+
+.wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapper svg text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+.wrapper svg > .rect {
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}
+.wrapper svg .rect {
+  fill: #fff;
+  opacity: 0;
+  animation: appear 1s linear forwards;
 }
 
 /* responsaive  */
@@ -209,7 +258,6 @@ input::placeholder {
     line-height: 30px;
   }
   .content__container {
-   
     padding: 0px 20px;
   }
   .justify {
@@ -217,240 +265,10 @@ input::placeholder {
   }
 }
 @media screen and (max-width: 991px) {
-
   .mg-t {
     padding-top: 50px;
   }
-
-
+  img .cafe {
+    width: 2px;
+  }
 }
-
-a {
-  text-decoration: none !important;
-  background-color: #00f094;
-  font-size: 25px;
-  font-family: 'futura';
-  color: white !important;
-  margin-right: 5px;
-}
-
-.font-size-25 {
-  font-size: 30px;
-  font-family: 'futura';
-
-}
- 
-  /* animation logo  */
-
-
-  .svg-logo-2 {
-    opacity: 0;
-    animation: appear 1s linear 8s forwards;
-  }
-  
-  video {
-    opacity: 0;
-    animation: appear 1s linear 10s forwards;
-  }
-
-
-  .rect {
-    opacity: 0;
-    animation: appear 5s linear  forwards;
-  }
-  .svg-logo
-   {
-    animation: fill 4s ease forwards;
-  }
-  .lettre {
-    animation: opacity 4s easer 1s;
-  }
-  .svg-logo .lettre
-   {
-    stroke-dasharray: 500;
-    stroke-dashoffset: 500;
-    animation:line-anim 10s 3s ease forwards;
-  }
-  
-  .svg-logo .carre {
-    opacity: 0;
-    fill: #00f094;
-    animation: change-color 12s 2s forwards, appear 3s 2s forwards;
-  }
-  
-  .svg-logo .point
-  {
-    opacity: 0;
-    fill: #00f094;
-    animation: change-color 12s 2s forwards, appearPoint 2s  forwards;
-  
-  }
-
-  @keyframes line-anim {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  @keyframes fill {
-    0% {
-      fill: transparent;
-    }
-    80% {
-      fill: transparent;
-    }
-    100% {
-      fill: #001d3d;
-    }
-  }
-
-   
-  @-webkit-keyframes opacity {
-    0%
-   {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes change-color {
-    0%,
-    12.66%,
-    100% {
-      fill: #00f094;
-    }
-    /* 16.66%, */
-    29.32% {
-     fill: #fee402;
-    }
-    /* 33.32%, */
-    45.98% {
-      fill: #00f094;
-    }
-  }
-  
-  @keyframes appearPoint {
-    0% {
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-    }
-    40% {
-      opacity: 0;
-    }
-    60% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes appear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-
-/* 
-  @keyframes appear-com {
-    0%,
-    12.66%,
-    100% {
-      fill: #00f094;
-      opacity: 1;
-    }
-    16.66%,
-    29.32% {
-      opacity: 0;
-    }
-    33.32%,
-    45.98% {
-      fill: #00f094;
-      opacity: 1;
-    }
-  }
-  @keyframes appear-work {
-    0%,
-    12.66%,
-    100% {
-      fill: #00f094;
-      opacity: 0;
-    }
-    16.66%,
-    29.32% {
-      opacity: 1;
-      fill: #fee402;
-    }
-    33.32%,
-    45.98% {
-      opacity: 0;
-      fill: #00f094;
-    }
-  } */
-
-/* video dans texte  */
-.wrapper {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  max-width: 1000px;
-}
-.wrapper video {
-  width: 100%;
-  padding-top: 20px;
-  padding-right: 2.5px;
-  padding-left: 2px;
-
-}
-
-.wrapper svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.wrapper svg text {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  font-size: 35px;
-}
-.wrapper svg > .rect {
-  -webkit-mask: url(#mask);
-  mask: url(#mask);
-}
-.wrapper svg .rect {
-  fill: #fff;
-}
-
-/* video:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 30px;
-  background-color: #fff;
-} */
-/* .wrapper:before {
-  left: -9px;
-}
-.wrapper:after {
-  right: 5px;
-} */
-
-
-
-
- 
