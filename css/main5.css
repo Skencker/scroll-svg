@@ -231,11 +231,28 @@ a {
  
   /* animation logo  */
 
-  .svg-logo {
+
+  .svg-logo-2 {
+    opacity: 0;
+    animation: appear 1s linear 8s forwards;
+  }
+  
+  video {
+    opacity: 0;
+    animation: appear 1s linear 10s forwards;
+  }
+
+
+  .rect {
+    opacity: 0;
+    animation: appear 5s linear  forwards;
+  }
+  .svg-logo
+   {
     animation: fill 4s ease forwards;
   }
   .lettre {
-    animation: opacity 4s linear 1s;
+    animation: opacity 4s easer 1s;
   }
   .svg-logo .lettre
    {
@@ -250,7 +267,8 @@ a {
     animation: change-color 12s 2s forwards, appear 3s 2s forwards;
   }
   
-  .svg-logo .point {
+  .svg-logo .point
+  {
     opacity: 0;
     fill: #00f094;
     animation: change-color 12s 2s forwards, appearPoint 2s  forwards;
@@ -332,19 +350,8 @@ a {
     }
   }
 
-  .com {
-    opacity: 0;
-    fill: #00f094;
-    animation: appear-com 12s 4.1s forwards;
-  }
 
-  .work {
-    opacity: 1;
-    fill: #fee402;
-    /* animation: appear-work 12s 4s forwards; */
-  }
-
-
+/* 
   @keyframes appear-com {
     0%,
     12.66%,
@@ -379,9 +386,59 @@ a {
       opacity: 0;
       fill: #00f094;
     }
-  }
+  } */
 
+/* video dans texte  */
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  max-width: 1000px;
+}
+.wrapper video {
+  width: 100%;
+  height: 80%;
+  padding-top: 20px;
+  padding-right: 2.5px;
+  padding-left: 2px;
 
+}
+
+.wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapper svg text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+.wrapper svg > .rect {
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}
+.wrapper svg .rect {
+  fill: #fff;
+}
+
+/* video:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 30px;
+  background-color: #fff;
+} */
+/* .wrapper:before {
+  left: -9px;
+}
+.wrapper:after {
+  right: 5px;
+} */
 
 
 
