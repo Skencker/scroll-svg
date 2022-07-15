@@ -98,8 +98,6 @@ a {
   animation: appear 1s linear 8s forwards;
 }
 
-
-
 .svg-logo {
   animation: fill 4s ease forwards;
 }
@@ -246,9 +244,15 @@ a {
 }
 
 /* responsaive  */
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 700px) {
   .cafe {
-    width: 70%;
+    width: 50%;
+    margin-top: 1px;
   }
   .mg-t {
     padding-top: 60px;
@@ -268,7 +272,14 @@ a {
   .mg-t {
     padding-top: 50px;
   }
-  img .cafe {
-    width: 2px;
+  .cafe {
+    width: 30%;
+    margin-top: 0px;
   }
+
 }
+
+.cafe {
+  width: 51%;
+}
+
